@@ -51,7 +51,7 @@
 @interface PLSClipMovieView : UIView
 
 @property (nonatomic, weak) id<PLSClipMovieViewDelegate> delegate;
-
+#pragma mark - CHENPJ  Float64 = double ，Float32 = float
 - (instancetype)initWithMovieAsset:(AVAsset *)asset minDuration:(Float64)minDuration maxDuration:(Float64)maxDuration;
 
 - (instancetype)initWithMovieURL:(NSURL *)url minDuration:(Float64)minDuration maxDuration:(Float64)maxDuration;

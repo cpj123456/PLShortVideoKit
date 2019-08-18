@@ -157,7 +157,7 @@
     
     self.progressLabel.text = [NSString stringWithFormat:@"%d%%", (int)(progress * 100)];
 }
-
+#pragma mark - CHENPJ  GCD锁获取PHAsset资源
 + (NSURL *)movieURL:(PHAsset *)phasset {
     
     __block NSURL *url = nil;
@@ -181,7 +181,7 @@
     
     return url;
 }
-
+#pragma mark - CHENPJ  检查视频方向？？？
 + (BOOL)checkForPortrait:(CGAffineTransform)transform {
     
     BOOL assetPortrait  = NO;

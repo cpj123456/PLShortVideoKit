@@ -130,6 +130,7 @@ UITableViewDataSource
 }
 
 #pragma mark -- 获取音乐文件的封面
+#pragma mark - CHENPJ  获取音乐文件封面 AVMetadataItem
 - (UIImage *)coverImageWithURL:(NSURL *)url {
     NSData *data = nil;
     // 初始化媒体文件
@@ -170,7 +171,8 @@ UITableViewDataSource
         _iconPromptLabel.textAlignment = NSTextAlignmentLeft;
         _iconPromptLabel.font = [UIFont systemFontOfSize:13];
         _iconPromptLabel.textColor = [UIColor whiteColor];
-        _iconPromptLabel.lineBreakMode = NSLineBreakByTruncatingHead; //前面部分文字以……方式省略，显示尾部文字内容。
+        _iconPromptLabel.lineBreakMode = NSLineBreakByTruncatingHead;
+#pragma mark - CHENPJ  //前面部分文字以……方式省略，显示尾部文字内容。
         [self.contentView addSubview:_iconPromptLabel];
         
         _iconImageView = [[UIImageView alloc] initWithFrame:CGRectMake(8, 8, 32, 32)];
@@ -189,6 +191,7 @@ UITableViewDataSource
     _iconPromptLabel.text = labelName;
     _iconImageView.image = image;
     _lineView.frame = CGRectMake(8, 47.5, width - 16, 0.5);
+#pragma mark - CHENPJ  根据UILabel(已知宽度)，得到高度
     CGRect bounds = [labelName boundingRectWithSize:CGSizeMake(width - 56, CGFLOAT_MAX) options:NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:13]} context:nil];
     if (bounds.size.height < 32) {
         _iconPromptLabel.frame = CGRectMake(48, (48 - bounds.size.height)/2, width - 56, bounds.size.height);

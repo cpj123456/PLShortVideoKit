@@ -26,7 +26,7 @@
     }
     return self;
 }
-
+#pragma mark - CHENPJ  图片旋转view CABasicAnimation
 - (void)startScrollAnimation {
     CABasicAnimation* rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
     rotationAnimation.toValue = [NSNumber numberWithFloat: M_PI * 2.0 ];
