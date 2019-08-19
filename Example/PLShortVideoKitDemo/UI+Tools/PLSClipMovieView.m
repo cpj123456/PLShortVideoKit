@@ -238,10 +238,11 @@ static NSString * const PLSClipMovieViewCellId = @"PLSClipMovieViewCellId";
     }];
 }
 
+#pragma mark - CHENPJ 切割视频每帧图片(异步)
 - (void)getImagesCount:(NSUInteger)imageCount imageBackBlock:(void (^)(UIImage *))imageBackBlock {
     Float64 durationSeconds = self.totalSeconds;
     float fps = self.frameRate;
-    
+
     NSMutableArray *times = [NSMutableArray array];
     Float64 totalFrames = durationSeconds * fps; //获得视频总帧数
     

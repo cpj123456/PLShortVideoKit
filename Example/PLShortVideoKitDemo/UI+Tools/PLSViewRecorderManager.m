@@ -29,7 +29,7 @@ static const NSInteger kPLSVideoFrameRate = 20;
 
 @end
 
-
+#pragma mark - CHENPJ 以纳秒为单位获得正常运行时间
 static uint64_t getUptimeInNanosecondWithMachTime(uint64_t machTime) {
     static mach_timebase_info_data_t s_timebase_info = {0};
     
@@ -183,7 +183,7 @@ static uint64_t getUptimeInNanosecondWithMachTime(uint64_t machTime) {
 }
 
 #pragma mark - others
-
+#pragma mark - CHENPJ -(CVPixelBufferRef)createCVPixelBufferWithView:(UIView *)view
 - (CVPixelBufferRef)createCVPixelBufferWithView:(UIView *)view {
     UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.opaque, 0.0);
     [view drawViewHierarchyInRect:view.bounds afterScreenUpdates:NO];

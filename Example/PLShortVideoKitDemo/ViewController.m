@@ -18,7 +18,8 @@
 
 #define PLS_RGBCOLOR(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
 
-@interface ViewController () 
+@interface ViewController ()
+// 系统触感反馈
 @property (nonatomic, strong) UIImpactFeedbackGenerator *clickFeedback;
 @end
 

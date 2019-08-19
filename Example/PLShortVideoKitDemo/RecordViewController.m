@@ -82,7 +82,7 @@ PLScreenRecorderManagerDelegate
 @property (strong, nonatomic) NSMutableArray<NSDictionary *> *filtersArray;
 @property (assign, nonatomic) NSInteger filterIndex;
 
-@property (strong, nonatomic) UIButton *draftButton;
+@property (strong, nonatomic) UIButton *draftButton;// 草稿箱
 @property (strong, nonatomic) NSURL *URL;
 
 @property (strong, nonatomic) UIButton *musicButton;

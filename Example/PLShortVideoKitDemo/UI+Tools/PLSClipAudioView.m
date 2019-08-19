@@ -157,6 +157,7 @@
     [self hide];
 }
 
+#pragma mark - CHENPJ 秒转换为 "hh:mm:ss"/ "mm:ss"(hh=00)
 //Time format: "hh:mm:ss"
 //if hh=00, return:"mm:ss"
 - (NSString *)timeFormatter:(int)timeOnSecond {
@@ -170,6 +171,7 @@
     }
 }
 
+#pragma mark - CHENPJ 获取音频文件duration
 - (CGFloat)getFileDuration:(NSURL*)URL {
     NSDictionary *opts = [NSDictionary dictionaryWithObject:[NSNumber numberWithBool:NO] forKey:AVURLAssetPreferPreciseDurationAndTimingKey];
     AVURLAsset *asset = [AVURLAsset URLAssetWithURL:URL options:opts];

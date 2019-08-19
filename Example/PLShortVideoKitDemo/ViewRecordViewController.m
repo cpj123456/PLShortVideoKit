@@ -122,7 +122,7 @@ PLShortVideoRecorderDelegate
     self.recordToolboxView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:self.recordToolboxView];
     
-    // 视频录制进度条
+    // 视频录制进度条 ？？？
     self.progressBar = [[PLSProgressBar alloc] initWithFrame:CGRectMake(0, 5, PLS_SCREEN_WIDTH, 8)];
     [self.recordToolboxView addSubview:self.progressBar];
     

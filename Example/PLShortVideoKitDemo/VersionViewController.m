@@ -29,6 +29,7 @@
         [NSString stringWithFormat:@"Demo version: %@", demoBuildNumber],
         [NSString stringWithFormat:@"SDK version: %@", sdkVersion]
     };
+#pragma mark - CHENPJ  ARRAY_SIZE??
     for (int i = 0; i < ARRAY_SIZE(texts); i ++) {
         UILabel *versionLabel = [[UILabel alloc] init];
         versionLabel.textColor = [UIColor colorWithWhite:1.0 alpha:.5];
